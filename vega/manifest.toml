@@ -1,0 +1,17 @@
+schema-version = 1
+
+[package]
+title = "Basic UI React Native Application for project myfeed"
+version = "0.1.0"
+id = "com.galaxies.myfeed"
+
+[components]
+[[components.interactive]]
+id = "com.galaxies.myfeed.main"
+runtime-module = "/com.amazon.kepler.keplerscript.runtime.loader_2@IKeplerScript_2_0"
+launch-type = "singleton"
+categories = ["com.amazon.category.main"]
+
+#Required for remote button events.
+[[wants.service]]
+id = "com.amazon.inputd.service"

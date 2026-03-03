@@ -1,0 +1,18 @@
+{
+  "name": "rnmonorepo",
+  "packageManager": "yarn@4.5.0",
+  "version": "1.0.0",
+  "description": "Sample project for React Native monorepo using Yarn workspaces.",
+  "license": "ISC",
+  "scripts": {
+    "run:expo:go": "yarn workspace @rnmonorepo/mobile run start",
+    "run:expo:ios": "yarn workspace @rnmonorepo/mobile run ios",
+    "run:expo:android": "yarn workspace @rnmonorepo/mobile run android",
+    "build:vega": "yarn workspace @rnmonorepo/vega run build:debug"
+  },
+  "workspaces": [
+    "packages/*",
+    "mobile",
+    "vega"
+  ]
+}
