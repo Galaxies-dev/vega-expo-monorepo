@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git rm --cached -f mobile)",
+      "Bash(git add mobile/)"
+    ]
+  }
+}
