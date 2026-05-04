@@ -9,7 +9,8 @@ const config = getDefaultConfig(projectRoot);
 
 // Watch the shared packages folder (not the entire monorepo, which includes
 // other workspaces with different React versions)
-config.watchFolders = [...(config.watchFolders ?? []), packagesRoot];
+// config.watchFolders = [...(config.watchFolders ?? []), packagesRoot];
+config.watchFolders = [packagesRoot];
 
 // Let Metro know where to resolve packages from
 config.resolver.nodeModulesPaths = [

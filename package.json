@@ -8,7 +8,8 @@
     "run:expo:go": "yarn workspace @rnmonorepo/mobile run start",
     "run:expo:ios": "yarn workspace @rnmonorepo/mobile run ios",
     "run:expo:android": "yarn workspace @rnmonorepo/mobile run android",
-    "build:vega": "yarn workspace @rnmonorepo/vega run build:debug"
+    "build:vega": "yarn workspace @rnmonorepo/vega run build:debug",
+    "run:vega": "vega device start-port-forwarding --device VirtualDevice -p 8081 --forward false; vega run-app vega/build/aarch64-debug/vega_aarch64.vpkg -d VirtualDevice"
   },
   "workspaces": [
     "packages/*",
